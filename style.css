@@ -1,0 +1,98 @@
+* {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+:root {
+  --color--header: #3a283b;
+  --color--letra: white;
+  --letra--pag: Arial, Helvetica, sans-serif;
+  --boton--rosa: #d009c5;
+  --boton--ocuro: #792474;
+  --color--titulo: #cd84c1;
+}
+
+header {
+  background-color: var(--color--header);
+  height: auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.li_vinculos {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  margin: 30px;
+}
+
+.logo_letra {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  align-items: center;
+}
+
+.logo_imagenes {
+  height: 44px;
+  width: 44px;
+}
+
+.logo_titulo {
+  margin-left: 20px;
+  color: var(--color--titulo);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+}
+
+.vinculos {
+  text-decoration: none;
+  color: var(--color--letra);
+  font-family: var(--letra--pag);
+}
+
+/* .header_vinculos {
+  display: flex;
+  justify-content: center;
+} */
+
+.boton {
+  padding: 15px;
+  border-radius: 12px;
+  margin: 5px;
+  color: var(--color--letra);
+}
+
+.botones_inicia {
+  background-color: var(--boton--ocuro);
+}
+
+.botones__regitro {
+  background-color: var(--boton--rosa);
+}
+
+/* body */
+
+.parte1 {
+  background-image: url("fondo1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
