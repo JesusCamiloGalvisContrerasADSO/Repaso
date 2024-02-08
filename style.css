@@ -11,7 +11,8 @@
   --boton--rosa: #d009c5;
   --boton--ocuro: #792474;
   --color--titulo: #cd84c1;
-  --negrita--vinculos:black;
+  --negrita--vinculos: black;
+  --color--card: black;
 }
 
 header {
@@ -103,25 +104,24 @@ header {
   align-items: center;
 }
 
-.parte1_titulo{
+.parte1_titulo {
   font-family: var(--letra--pag);
   font-size: 64px;
   font-weight: bold;
 }
 
-.parte1_subtitulo{
+.parte1_subtitulo {
   font-family: var(--letra--pag);
   font-size: 32px;
-  
 }
 
-.parte1_texto{
+.parte1_texto {
   font-family: var(--letra--pag);
   font-size: 18px;
   padding-top: 50px;
 }
 
-.parte1_registrate{
+.parte1_registrate {
   text-decoration: none;
   font-size: 24px;
   margin: 5px;
@@ -129,10 +129,9 @@ header {
   color: var(--negrita--vinculos);
 }
 
-
 /* parte2 */
 
-.parte2{
+.parte2 {
   background-image: url("fondos/fondo2.png");
   background-size: cover;
   background-position: center;
@@ -142,7 +141,7 @@ header {
   align-items: center;
 }
 
-.parte2_texto{
+.parte2_texto {
   font-size: 42px;
   padding-left: 550px;
   font-family: var(--letra--pag);
@@ -152,8 +151,8 @@ header {
 
 /* parte3 */
 
-.parte3{
-  background-image: url(fondos/fondo3.png);
+.parte3 {
+  background-image: url(fondos/fondo3.jpg);
   background-size: cover;
   background-position: center;
   height: 870px;
@@ -164,7 +163,7 @@ header {
   color: var(--color--letra);
 }
 
-.parte3_titulo{
+.parte3_titulo {
   font-size: 35px;
   display: flex;
   justify-content: center;
@@ -173,7 +172,7 @@ header {
   font-family: var(--letra--pag);
 }
 
-.parte3_texto{
+.parte3_texto {
   width: 510px;
   text-align: center;
   font-family: var(--letra--pag);
@@ -182,26 +181,22 @@ header {
 
 /* parte4 */
 
-.parte4{
+.parte4 {
   background-image: url(fondos/fondo4.png);
   background-size: cover;
   background-position: center;
   height: 840px;
   width: 100%;
   color: var(--color--letra);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }
 
-.cuarto{
+.cuarto {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,1fr);
-
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
 
   /* grid-template-columns: [a] 1fr [b] 1fr [c] 1fr;
 
@@ -212,12 +207,51 @@ header {
   " d e " 40px / 1fr 1fr 1fr; */
 }
 
+.parte4_titulo {
+  font-size: 35px;
+  font-family: var(--letra--pag);
+  font-weight: bold;
+  text-align: center;
+}
 
+.parte4_section1 {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  margin: 30px;
+  align-items: center;
+}
+
+.parte4_texto1 {
+  font-size: 40px;
+  font-family: var(--letra--pag);
+  margin-left: 48px;
+}
+
+.parte4_imagen1 {
+  padding-left: 100px;
+}
+
+.parte4_section2 {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  margin: 30px;
+  align-items: center;
+}
+.parte4_imagen2 {
+  padding-left: 300px;
+}
+
+.parte4_texto2 {
+  font-size: 40px;
+  font-family: var(--letra--pag);
+  margin-left: 48px;
+}
 
 /* parte5 */
 
-
-.parte5{
+.parte5 {
   background-image: url(fondos/fondo5.png);
   background-size: cover;
   background-position: center;
@@ -225,15 +259,48 @@ header {
   width: 100%;
   color: var(--color--letra);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  height: 452px;
+  width: 313px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.parte5_card1 {
+  padding: 30px;
+}
+
+.cinco {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 147px;
+}
+
+.card_imagen {
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+.card_texto {
+  font-size: 18px;
+  font-family: var(--letra--pag);
+  margin: 30px;
+  text-align: justify;
+}
 
 /* parte6 */
 
-.parte6{
-  background-image: url(fondos/fondo6.png);
+.parte6 {
+  background-image: url(fondos/fondo6.jpg);
   background-size: cover;
   background-position: center;
   height: 1000px;
@@ -244,10 +311,9 @@ header {
   align-items: center;
 }
 
-
 /* parte7 */
 
-.parte7{
+.parte7 {
   background-image: url(fondos/fondo7.png);
   background-size: cover;
   background-position: center;
@@ -257,4 +323,40 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pie_pagina {
+  background-color: black;
+  color: var(--color--letra);
+  height: 509px;
+  width: 100%;
+  font-size: var(--letra--pag);
+}
+
+.pie_conocenos {
+  padding: 30px;
+}
+
+.pie_imagen {
+  padding-left: 18px;
+}
+
+.pie_descarga {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.pie_logo {
+  height: 40px;
+  width: 40px;
+  padding-left: 20px;
+}
+
+.pie_app {
+  padding: 30px;
+}
+.app {
+  padding-left: 20px;
 }
